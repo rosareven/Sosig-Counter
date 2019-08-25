@@ -1,23 +1,54 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="GitLab Pages">
-    <title>Plain HTML site using GitLab Pages</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="https://pages.gitlab.io/plain-html/">Plain HTML Example</a>
-      <a href="https://gitlab.com/pages/plain-html/">Repository</a>
-      <a href="https://gitlab.com/pages/">Other Examples</a>
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/colorpicker.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="container">
+    <div class="parrot">
+      <img id="partyParrot" src="">
     </div>
+    <div class="question">
+      <h1>Have you finished something today?</h1>
+    </div>
+    <div class="sosig-yes">
+      <input type="image" id="sosig-yes" src="img/sosig-yes.png" onclick="levelUpParrot()">
+    </div>
+    <div class="sosig-no">
+      <input type="image" id="sosig-no" src="img/sosig-no.png" onclick="levelDownParrot()">
+    </div>
+    <div class="sosigEarned">
+      <p>Sosig earned this week: <p id="sosigEarned"></p></p>
+    </div>
+  </div>
 
-    <h1>Hello World!</h1>
+  <footer class="footer">
+    <p>Change Background <div id="colorSelector"></div></p>
+  </footer>
+  <!-- scripts -->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/vendor/colorpicker.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
-    <p>
-      This is a simple plain-HTML website on GitLab Pages, without any fancy static site generator.
-    </p>
-  </body>
 </html>
-
